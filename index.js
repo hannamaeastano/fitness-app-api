@@ -13,7 +13,7 @@ const app = express();
 const corsOptions = {
     origin: ['http://localhost:3000',
         'https://fitness-app-api-dfzj.onrender.com',
-        'https://fitness-app-client-iota.vercel.app'
+        'https://fitness-app-client-iota.vercel.app/'
     ], // Adjust this based frontend URL (for future reference)
     credentials: true,
     optionsSuccessStatus: 200
