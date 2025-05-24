@@ -11,13 +11,15 @@ const workoutRoutes = require("./routes/workout");
 // [SECTION] Environment Setup
 const app = express();
 const corsOptions = {
-    origin: ['http://localhost:3000',
-        'https://fitness-app-api-dfzj.onrender.com',
-        'https://fitness-app-client-iota.vercel.app/'
-    ], // Adjust this based frontend URL (for future reference)
+    origin: [
+        'http://localhost:3000',
+        'https://fitness-app-client-iota.vercel.app',
+        'https://fitness-app-api-dfzj.onrender.com'
+    ],
     credentials: true,
     optionsSuccessStatus: 200
 };
+
 
 // Middleware
 app.use(express.json());
